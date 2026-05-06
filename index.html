@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 10px;
+        }
+        h2 {
+            color: rgb(19, 27, 48);
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    
+<h1>Ejercicios JavaScript</h1>
+<div id="resultado"></div>
+
+<script>
+let r = document.getElementById("resultado");
+
+// Función para mostrar título
+function titulo(texto){
+    r.innerHTML += "<h2>" + texto + "</h2>";
+}
+
+// 1
+titulo("Ejercicio 1");
+let nombre = "Nilton Carrasco";
+r.innerHTML += "Nombre: " + nombre + "<br>";
+console.log("1. Nombre:", nombre);
+
+// 2
+titulo("Ejercicio 2");
+let a = 5, b = 3;
+let suma = a + b;
+r.innerHTML += "Suma: " + suma + "<br>";
+console.log("2. Suma:", suma);
+
+// 3
+titulo("Ejercicio 3");
+let edad = 18;
+r.innerHTML += "Edad: " + edad + "<br>";
+console.log("3. Edad:", edad);
+
+// 4
+titulo("Ejercicio 4");
+let numero = 100;
+r.innerHTML += "Número a texto: " + numero.toString() + "<br>";
+console.log("4:", numero.toString());
+
+// 5
+titulo("Ejercicio 5");
+const PI = 3.1416;
+r.innerHTML += "Valor de PI: " + PI + "<br>";
+console.log("5:", PI);
+
+// 6
+titulo("Ejercicio 6");
+let base = 10, altura = 5;
+r.innerHTML += "Área: " + (base * altura) + "<br>";
+console.log("6:", base * altura);
+
+// 7
+titulo("Ejercicio 7");
+let residuo = 10 % 3;
+r.innerHTML += "Residuo: " + residuo + "<br>";
+console.log("7:", residuo);
+
+// 8
+titulo("Ejercicio 8");
+let contador = 1;
+contador++;
+r.innerHTML += "Incremento: " + contador + "<br>";
+console.log("8:", contador);
+
+// 9
+titulo("Ejercicio 9");
+r.innerHTML += "a > b: " + (a > b) + "<br>";
+r.innerHTML += "a < b: " + (a < b) + "<br>";
+r.innerHTML += "a == b: " + (a == b) + "<br>";
+console.log("9 comparaciones");
+
+// 10
+titulo("Ejercicio 10");
+let num = 15;
+if (num > 10) {
+    r.innerHTML += "Es mayor que 10<br>";
+    console.log("10: mayor que 10");
+}
+
+// 11
+titulo("Ejercicio 11");
+let n = 4;
+r.innerHTML += (n % 2 == 0 ? "Par" : "Impar") + "<br>";
+console.log("11:", n % 2 == 0 ? "Par" : "Impar");
+
+// 12
+titulo("Ejercicio 12");
+r.innerHTML += (edad >= 18 ? "Mayor de edad" : "Menor de edad") + "<br>";
+console.log("12:", edad >= 18);
+
+// 13
+titulo("Ejercicio 13");
+r.innerHTML += (a > b ? "a es mayor" : "b es mayor o iguales") + "<br>";
+console.log("13 comparación");
+
+// 14
+titulo("Ejercicio 14");
+let nota = 14;
+r.innerHTML += (nota >= 11 ? "Aprobado" : "Desaprobado") + "<br>";
+console.log("14:", nota);
+
+// 15
+titulo("Ejercicio 15");
+let dia = 3;
+let dias = ["","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado","Domingo"];
+r.innerHTML += dias[dia] + "<br>";
+console.log("15:", dias[dia]);
+
+// 16
+titulo("Ejercicio 16");
+for (let i = 1; i <= 10; i++) {
+    r.innerHTML += i + " ";
+    console.log("16:", i);
+}
+r.innerHTML += "<br>";
+
+// 17
+titulo("Ejercicio 17");
+let sumaTotal = 0;
+for (let i = 1; i <= 100; i++) sumaTotal += i;
+r.innerHTML += "Suma total: " + sumaTotal + "<br>";
+console.log("17:", sumaTotal);
+
+// 18
+titulo("Ejercicio 18");
+let numTabla = 5;
+for (let i = 1; i <= 10; i++) {
+    r.innerHTML += numTabla + " x " + i + " = " + (numTabla * i) + "<br>";
+}
+console.log("18 tabla");
+
+// 19
+titulo("Ejercicio 19");
+let i = 10;
+while (i >= 1) {
+    r.innerHTML += i + " ";
+    console.log("19:", i);
+    i--;
+}
+r.innerHTML += "<br>";
+
+// 20
+titulo("Ejercicio 20");
+let arreglo = [1,2,3,4,5];
+arreglo.forEach(num => {
+    r.innerHTML += num + " ";
+    console.log("20:", num);
+});
+</script>
+
+</body>
+</html>
